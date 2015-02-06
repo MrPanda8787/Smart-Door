@@ -1,3 +1,5 @@
 Development Journal
 2-6-15
-	I created the git hub repository and the development journal. 
+	This week I created the git hub repository for Smart Door. I also created the Development Journal and am
+creating the first entry. The read me for the repository was edited to describe what this project is about and what
+it will do.
