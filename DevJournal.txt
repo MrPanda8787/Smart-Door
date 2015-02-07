@@ -2,4 +2,8 @@ Development Journal
 2-6-15
 	This week I created the git hub repository for Smart Door. I also created the Development Journal and am
 creating the first entry. The read me for the repository was edited to describe what this project is about and what
-it will do.
+it will do. I also did research into what it would take to send an email or notification to someone to alert them. 
+I found out that java has an api that can be implemented called javax.mail and javax.mail.internet that adds in
+methods that can be used to send emails. The email has to have a host server though to be sent from so I will need
+to figure that out as well. I will most likely have the email be sent to the owner of the smart door so that they 
+can get instant notification via email on their devices if a door or window is not in it's correct state.
