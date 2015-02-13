@@ -7,3 +7,12 @@ I found out that java has an api that can be implemented called javax.mail and j
 methods that can be used to send emails. The email has to have a host server though to be sent from so I will need
 to figure that out as well. I will most likely have the email be sent to the owner of the smart door so that they 
 can get instant notification via email on their devices if a door or window is not in it's correct state.
+2-13-15
+	This week I worked with Nate, my adult mentor, who is helping me learn how to interact with the hardware as
+well as helping me acquire the necassary sensors and other hardware, to better understand what my goals are for this
+project. He also showed my the program that I will be using to program the PLC that will be running my code. I will
+be using Lenze's PLC Designer 3.8 software, using ladder logic with a codys based system. He also spent a few hours
+with me teaching me the basics of PLC Designer so that I can get started working myself to create the code. We got
+the code to recognize when a sensos was open or closed to keep track of the door's state, open and closed. One idea 
+we were working on trying to figure out how to do was keep track of how many people are inside of a room, and if 
+there is no one in the room to lock the door after a delay.
