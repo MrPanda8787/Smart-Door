@@ -16,3 +16,12 @@ with me teaching me the basics of PLC Designer so that I can get started working
 the code to recognize when a sensos was open or closed to keep track of the door's state, open and closed. One idea 
 we were working on trying to figure out how to do was keep track of how many people are inside of a room, and if 
 there is no one in the room to lock the door after a delay.
+2-20-15
+	This week I worked on designing an API to better understand what logic needs to go behind every function of my
+design and what variables are going to be needed for every method. I was working on figuring out how to keep track of
+people exiting and entering. I am going to use a sensor in front of the door to the room and also inside the room by
+the door so that when someone walks in they trip one sensor and then the other sensor, and depending on the order they 
+are tripped I will be able to tell if someone is entering or exitin a room and keep track of how many people are inside
+of a room. I am still trying to figure out how to do this inside of PLC Designer and am trying to use rising edge and
+falling edges of the sensors so that I can recognize which one is bein tripped when. I also got code that allows me to 
+track the current state of the door, opened/closed and locked/unlocked.
