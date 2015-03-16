@@ -26,6 +26,28 @@ of a room. I am still trying to figure out how to do this inside of PLC Designer
 falling edges of the sensors so that I can recognize which one is bein tripped when. I also got code that allows me to 
 track the current state of the door, opened/closed and locked/unlocked.
 2-27-15
-	This week I worked with Nate to further develope the coding side of this project as well as getting a test system set up for me to be able to run my code. I got a plc with a single In and Out slice for sensors as well as a button that I can use to act as every sensor and input I will have in the future. I used this to help run and test my code and get it to actually work. We relized that I don't have the hardware easily available to keep track of people going in and out of a door so I decided that that aspect of this system will mostly likely have to not be done. I also got the code to recognize multiple alarms if they are already in the system that I can take an input off of and change the doors state depending on what is happening. Another feature that is being worked on is getting a command that puts the doors into an end of day state that locks all doors and sets alarms if one of those doors is oppened without the right authorization.
+	This week I worked with Nate to further develope the coding side of this project as well as getting a test
+ system set up for me to be able to run my code. I got a plc with a single In and Out slice for sensors as well as
+ a button that I can use to act as every sensor and input I will have in the future. I used this to help run and
+ test my code and get it to actually work. We relized that I don't have the hardware easily available to keep track
+ of people going in and out of a door so I decided that that aspect of this system will mostly likely have to not
+ be done. I also got the code to recognize multiple alarms if they are already in the system that I can take an input
+ off of and change the doors state depending on what is happening. Another feature that is being worked on is getting
+ a command that puts the doors into an end of day state that locks all doors and sets alarms if one of those doors is
+ oppened without the right authorization.
 3-6-15
-	This week I worked on developing code that allowed someone to access a door if need be after they have all been locked for the end of the day, and not set off an alarm. For this I am planning on having some sort of keypad with a code that allows the person to type in a code to unlock the door. My program will keep track that the door is unlocked due to that code being entered and when the code is input again the door will be locked back up. I am having some slight issues with this though due to having to use the same input to do both lock and unlock of the system. I am trying to work out a way to user a counter of some sort or delays in PLC designer to help enable this functionality of the program. I also finished up the first delevirable goal to recognize doors states.
+	This week I worked on developing code that allowed someone to access a door if need be after they have all
+ been locked for the end of the day, and not set off an alarm. For this I am planning on having some sort of keypad
+ with a code that allows the person to type in a code to unlock the door. My program will keep track that the door
+ is unlocked due to that code being entered and when the code is input again the door will be locked back up. I am
+ having some slight issues with this though due to having to use the same input to do both lock and unlock of the
+ system. I am trying to work out a way to user a counter of some sort or delays in PLC designer to help enable this 
+functionality of the program. I also finished up the first delevirable goal to recognize doors states.
+3-13-15
+	This started looking into some of the other ladder blocks to see if I would be able to integrate an array 
+of doors instead of only one. I found out that I will probably need to re-write my code so that I have a frame for
+a single door and then use other code to make multiple of doors filling in the frame where needed. I also found out
+that when I am taking sensor inputs I could use the rising edge or falling edge of the sensor. I might be able to use
+this in a way for the key pad input and try to configure it so that when the keypad input is first put in the signal stays
+on until it is input a second time and then recognize the rising edge of the signal and unlock the door and then the
+falling edge of the signal and close the door back up afterwards. I haven't been able to fully test this yet.
