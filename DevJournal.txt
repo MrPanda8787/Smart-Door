@@ -52,8 +52,35 @@ this in a way for the key pad input and try to configure it so that when the key
 on until it is input a second time and then recognize the rising edge of the signal and unlock the door and then the
 falling edge of the signal and close the door back up afterwards. I haven't been able to fully test this yet.
 3-20-15
-	This week I implemented ways to better display what state all of the variables are in so that I can use it for demonstration. I added methods that will light up lights whenever a variable is on or off so that I can easily see what is going on with the program just by looking at it instead of trying to look at the small little lights on the PLC it self. I don't have lights yet to use to show this but I am working on getting them so that I can show this. I also worked more on getting the keypad input done but I am still stumped as to what to do for that. I am going to continue trying to get this keypad to work, but I also need to start looking into how I am going to send messages out more so that I can get that going.
+	This week I implemented ways to better display what state all of the variables are in so that I can use it for
+ demonstration. I added methods that will light up lights whenever a variable is on or off so that I can easily see what
+ is going on with the program just by looking at it instead of trying to look at the small little lights on the PLC it
+ self. I don't have lights yet to use to show this but I am working on getting them so that I can show this. I also
+ worked more on getting the keypad input done but I am still stumped as to what to do for that. I am going to continue
+ trying to get this keypad to work, but I also need to start looking into how I am going to send messages out more so
+ that I can get that going.
 4-3-15
-	This week I started to look into sending out messages whenever I need to to alert the user. I started to look into sending out sms text messages, but for that I would need to have a device on my controller that could do it, which is kind of expensive, as well as needing a data plan for that device top be able to send messages. So instead I am going to try and use email to alert the user since all that takes is internet and the user can still get instant notifications. Next time I am able to meet with Nate I am going to discuss with him about what I need to have to be able to send out emails through my PLC. I don't know for sure if I would use a wireless internet or if I would have to tether myself with an ethernet cable, which might make things a little bit harder.
+	This week I started to look into sending out messages whenever I need to to alert the user. I started to look
+ into sending out sms text messages, but for that I would need to have a device on my controller that could do it,
+ which is kind of expensive, as well as needing a data plan for that device top be able to send messages. So instead
+ I am going to try and use email to alert the user since all that takes is internet and the user can still get instant
+ notifications. Next time I am able to meet with Nate I am going to discuss with him about what I need to have to be
+ able to send out emails through my PLC. I don't know for sure if I would use a wireless internet or if I would have
+ to tether myself with an ethernet cable, which might make things a little bit harder.
 4-10-15
-	This week I worked on developing my elevator pitch so that I could sell my product to Mr. Schreiber. I decided that having statistics about home break-ins would be a good way to get the point accross that they happen quite often and that a new system is needed to protect homes. Every 13 seconds a home break in happens and most happen while people are at work. So if they had notifications about it they can react quicker. I also worked more on developing the notification system and trying to figure out how to do that. Nate was out of town all week though so I wasn't able to get with him to figure out what device I will need to use. I plan on meeting with him this weekend to help my project keep moving forward.
+	This week I worked on developing my elevator pitch so that I could sell my product to Mr. Schreiber. I decided
+ that having statistics about home break-ins would be a good way to get the point accross that they happen quite often
+ and that a new system is needed to protect homes. Every 13 seconds a home break in happens and most happen while
+ people are at work. So if they had notifications about it they can react quicker. I also worked more on developing
+ the notification system and trying to figure out how to do that. Nate was out of town all week though so I wasn't able
+ to get with him to figure out what device I will need to use. I plan on meeting with him this weekend to help my project
+ keep moving forward.
+4-17-15
+	This week I developed most of my test panel so that I can better demonstrate how my program works. I decided to
+just have an aluminum panel with buttons and lights on it so that people can see a physical change whenever something
+happens. I have 7 buttons that represent a master lock, master unlock, Alarm reset, End of day, start of day, door code
+input, and a fire alarm. I also have a 2 state switch that represents the door itself and then another capacitive button
+that signifies someone opening the door from the inside of the building rather than the outside. I also figured out a way
+to implement wireless signals. I am using a wireless gateway and node from Banner just to be able to send a signal to a
+light and sounder to represent a text. I could have sent a text message if I would have gotten a data plan, but that would
+have cost more money. When any alarm goes off it send it to the gateway and the node lights up lights or sounds an alarm.
