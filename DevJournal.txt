@@ -84,3 +84,15 @@ that signifies someone opening the door from the inside of the building rather t
 to implement wireless signals. I am using a wireless gateway and node from Banner just to be able to send a signal to a
 light and sounder to represent a text. I could have sent a text message if I would have gotten a data plan, but that would
 have cost more money. When any alarm goes off it send it to the gateway and the node lights up lights or sounds an alarm.
+4-24-15
+	This week was a fairly slow week for the 20% project due to being gone at robotics world championships, but I
+I worked on debugging my code a bit more. I wasn't able to fully test everything because I still haven't finished the
+display piece but I am close.
+5-1-15
+	This week I started to develop an outline for how I want to do my presentation. I took some of the information
+I had found when researching for the elevator pitch and kept the information in a google drive document so that 
+I can access it later. I also talked with Nate since he was out of town to schedule a time to be able to finish
+developing the presentation and scheduled a time for this sunday. I also watched a few Ted talks to better understand
+how a Ted talk is organized. I found that I am going to need a way to sell my product, so I found a bit more
+data about home invasions. One issue I am running into though is how I want to demonsterate my test bench so that
+it is easy for the audience to understand what is going on and how it would actually work in real life.
